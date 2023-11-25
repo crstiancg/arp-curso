@@ -1,0 +1,22 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Hero from '../components/sections/Hero.astro';
+import Services from '../components/sections/Services.astro';
+import AboutUs from '../components/sections/AboutUs.astro';
+import AboutUsTwo from '../components/sections/AboutUsTwo.astro';
+import Features from '../components/sections/Features.astro';
+import CTA from '../components/sections/CTA.astro';
+import Brands from '../components/sections/Brands.astro';
+---
+
+<Layout title="Welcome to Arp">
+	<main class="flex flex-col gap-y-20 md:gap-y-32 overflow-hidden">
+		<Hero/>
+		<CTA/>
+		<!-- <Brands/> -->
+		<!-- <Services/> -->
+		<AboutUs/>
+		<Features/>
+		<AboutUsTwo/>
+	</main>
+</Layout>
