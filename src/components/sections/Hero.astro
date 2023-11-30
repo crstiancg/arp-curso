@@ -3,30 +3,136 @@ import Button from "../shared/Button.astro";
 import Container from "../shared/Container.astro";
 import Paragraph from "../shared/Paragraph.astro";
 import ByNumber from "./ByNumber.astro";
-
 ---
 
 <section class="relative pt-32 lg:pt-36">
-    <Container className={"flex flex-col lg:flex-row gap-10 lg:gap-12"}>
-        <div class="absolute w-full lg:w-1/2 inset-y-0 lg:right-0 ">
-            <span class="absolute -left-6 md:left-4 top-24 lg:top-28 w-24 h-24 rotate-90 skew-x-12 rounded-3xl bg-green-400 blur-xl opacity-60 lg:opacity-95 lg:block hidden"></span>
-            <span class="absolute right-4 bottom-12 w-24 h-24 rounded-3xl bg-primary blur-xl opacity-80"></span>
-        </div>
-        <span class="w-4/12 lg:w-2/12 aspect-square bg-gradient-to-tr from-primary to-green-400 absolute -top-5 lg:left-0 rounded-full skew-y-12 blur-2xl opacity-40 skew-x-12 rotate-90"></span>
-        <div class="relative flex flex-col items-center text-center lg:text-left lg:py-7 xl:py-8 
-        lg:items-start lg:max-w-none max-w-3xl mx-auto lg:mx-0 lg:flex-1 lg:w-1/2">
+  <Container className={"flex flex-col lg:flex-row gap-10 lg:gap-12"}>
+    <div class="absolute w-full lg:w-1/2 inset-y-0 lg:right-0">
+      <span
+        class="absolute -left-6 md:left-4 top-24 lg:top-28 w-24 h-24 rotate-90 skew-x-12 rounded-3xl bg-green-400 blur-xl opacity-60 lg:opacity-95 lg:block hidden"
+      ></span>
+      <span
+        class="absolute right-4 bottom-12 w-24 h-24 rounded-3xl bg-primary blur-xl opacity-80"
+      ></span>
+    </div>
+    <span
+      class="w-4/12 lg:w-2/12 aspect-square bg-gradient-to-tr from-primary to-green-400 absolute -top-5 lg:left-0 rounded-full skew-y-12 blur-2xl opacity-40 skew-x-12 rotate-90"
+    ></span>
+    <div
+      class="relative flex flex-col items-center text-center lg:text-left lg:py-7 xl:py-8
+        lg:items-start lg:max-w-none max-w-3xl mx-auto lg:mx-0 lg:flex-1 lg:w-1/2"
+    >
+      <h1
+        class="text-3xl/tight sm:text-4xl/tight md:text-5xl/tight xl:text-6xl/tight
+             font-bold text-heading-1"
+      >
+        Archivo <span
+          class="text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 from-20% via-primary via-30% to-green-600"
+          >Regional</span
+        > de Puno.
+      </h1>
+      <Paragraph className="mt-12">
+        <strong>El Archivo Regional de Puno</strong> inicia sus actividades el 12 de Enero del
+        año 1988, como Archivo Departamental en base a la <strong>Ley 19414 y su
+        Reglamento D.S. 022-75 ED</strong>, adecuando su funcionamiento a la <strong>Ley del
+        Sistema Nacional de Archivos Nº 25323 y su Reglamento D.S. 008-92 JUS.</strong>
+        Tiene por finalidad la defensa, conservación, incremento y servicio del
+        Patrimonio Documental de la Nación existente en la región. Depende
+        técnicamente y normativamente del Archivo General de la Nación,
+        administrativa y presupuestalmente del <strong>Gobierno Regional de Puno</strong>.  
             
-            <h1 class="text-3xl/tight sm:text-4xl/tight md:text-5xl/tight xl:text-6xl/tight
-             font-bold text-heading-1">
-             Archivo  <span class="text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 from-20% via-primary via-30% to-green-600">Regional</span> de Puno.
-            </h1>
-            <Paragraph className="mt-12">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga quia, similique consectetur incidunt vel inventore quo reprehenderit quis qui nulla dignissimos dolores cum minus magnam esse, nam eos veniam cupiditate!
-                Amet ad repudiandae corporis reiciendis sed quisquam voluptate dolor quasi praesentium possimus atque tempora optio necessitatibus molestiae maxime, commodi accusantium consequatur, perspiciatis dolores eligendi nihil et odio autem? Exercitationem, ipsam.
-                Amet ad repudiandae corporis reiciendis sed quisquam voluptate dolor quasi praesentium possimus atque tempora optio necessitatibus molestiae maxime, commodi accusantium consequatur, perspiciatis dolores eligendi nihil et odio autem? Exercitationem, ipsam.
-                Amet ad repudiandae corporis reiciendis sed quisquam voluptate dolor quasi praesentium possimus atque tempora optio necessitatibus molestiae maxime, commodi accusantium consequatur, perspiciatis dolores eligendi nihil et odio autem? Exercitationem, ipsam.
-            </Paragraph>
-            <!-- <div class="mt-12 w-full flex max-w-2xl mx-auto lg:mx-0">
+      </Paragraph>
+        <div class="hidden md:block">
+            <p class="text-heading-3 font-medium">Servicios que presta el <strong>Archivo Regional de Puno:</strong></p>
+            <ul class="mt-2 space-y-1 text-heading-3 font-medium">
+            <li>
+                <span
+                class="font-bold bg-box-bg rounded-full w-8 h-8 mr-3 text-primary inline-flex justify-center items-center"
+                >&checkmark;</span
+                > Búsqueda de documentos.
+            </li>
+            <li>
+                <span
+                class="font-bold bg-box-bg rounded-full w-8 h-8 mr-3 text-primary inline-flex justify-center items-center"
+                >&checkmark;</span
+                > Expedición de Testimonios.
+            </li>
+            <li>
+                <span
+                class="font-bold bg-box-bg rounded-full w-8 h-8 mr-3 text-primary inline-flex justify-center items-center"
+                >&checkmark;</span
+                > Expedición de copias simples.
+            </li>
+            <li>
+                <span
+                class="font-bold bg-box-bg rounded-full w-8 h-8 mr-3 text-primary inline-flex justify-center items-center"
+                >&checkmark;</span
+                > Expedición de copias certificadas.
+            </li>
+            <li>
+                <span
+                class="font-bold bg-box-bg rounded-full w-8 h-8 mr-3 text-primary inline-flex justify-center items-center"
+                >&checkmark;</span
+                > Transcripción de documentos.
+            </li>
+            <li>
+                <span
+                class="font-bold bg-box-bg rounded-full w-8 h-8 mr-3 text-primary inline-flex justify-center items-center"
+                >&checkmark;</span
+                > Regularización de escrituras públicas.
+            </li>
+            <li>
+                <span
+                class="font-bold bg-box-bg rounded-full w-8 h-8 mr-3 text-primary inline-flex justify-center items-center"
+                >&checkmark;</span
+                > Expedición de constancias.
+            </li>
+            <li>
+                <span
+                class="font-bold bg-box-bg rounded-full w-8 h-8 mr-3 text-primary inline-flex justify-center items-center"
+                >&checkmark;</span
+                > Exhibición de documentos.
+            </li>
+            <li>
+                <span
+                class="font-bold bg-box-bg rounded-full w-8 h-8 mr-3 text-primary inline-flex justify-center items-center"
+                >&checkmark;</span
+                > Atención a usuarios e investigadores.
+            </li>
+            <li>
+                <span
+                class="font-bold bg-box-bg rounded-full w-8 h-8 mr-3 text-primary inline-flex justify-center items-center"
+                >&checkmark;</span
+                >  Atención en la sección hemeroteca.
+            </li>
+            <li>
+                <span
+                class="font-bold bg-box-bg rounded-full w-8 h-8 mr-3 text-primary inline-flex justify-center items-center"
+                >&checkmark;</span
+                > Atención en la biblioteca especializada.
+            </li>
+            <li>
+                <span
+                class="font-bold bg-box-bg rounded-full w-8 h-8 mr-3 text-primary inline-flex justify-center items-center"
+                >&checkmark;</span
+                >  Atención en el fondo fotográfico.
+            </li>
+            <li>
+                <span
+                class="font-bold bg-box-bg rounded-full w-8 h-8 mr-3 text-primary inline-flex justify-center items-center"
+                >&checkmark;</span
+                > Supervisión y asesoramiento de los Archivos Institucionales públicas.
+            </li>
+            <li>
+                <span
+                class="font-bold bg-box-bg rounded-full w-8 h-8 mr-3 text-primary inline-flex justify-center items-center"
+                >&checkmark;</span
+                >  Asesoramiento en Organización Documental de Archivos, transferencia &emsp;  &emsp; &ensp;  de documentos, evaluación para eliminación.
+            </li>
+            </ul>
+        </div>
+
+      <!-- <div class="mt-12 w-full flex max-w-2xl mx-auto lg:mx-0">
                 <div class="flex sm:flex-row flex-col gap-5 w-full">
                     <form action="#"  class="py-1 pl-6 w-full pr-1 flex gap-3 items-center text-heading-3 shadow-lg shadow-box-shadow
                       border border-box-border bg-box-bg rounded-full ease-linear focus-within:bg-body  focus-within:border-primary">
@@ -49,12 +155,20 @@ import ByNumber from "./ByNumber.astro";
                     </form>
                 </div>
             </div> -->
-        </div>
+    </div>
 
-        <div class="flex flex-1 lg:w-1/2 lg:h-auto relative lg:max-w-none lg:mx-0 mx-auto max-w-3xl">
-            <img src="https://es.rmscloud.com/hubfs/Home_Module%201_Bubble%20Person_Student%20accom.png" alt="Hero image" width="2350" height="2359" class="lg:absolute lg:w-full lg:h-full rounded object-cover lg:max-h-none max-h-96">
-        </div>
-    </Container>
+    <div
+      class="flex flex-1 lg:w-1/2 lg:h-auto relative lg:max-w-none lg:mx-0 mx-auto max-w-3xl"
+    >
+      <img
+        src="/images/oficio.jpg"
+        alt="Hero image"
+        width="2350"
+        height="2359"
+        class="lg:absolute lg:w-full lg:h-full rounded object-cover lg:max-h-none max-h-96"
+      />
+    </div>
+  </Container>
 
-    <!-- <ByNumber/> -->
+  <!-- <ByNumber/> -->
 </section>
